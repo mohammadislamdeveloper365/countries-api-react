@@ -8,7 +8,7 @@ class Country extends Component {
 
     render() {
         const { name, capitalCity, country : {population, continents}, img} = this.props;
-        console.log(this.props)
+        
         return (
             <div className='country'>
                 <h1 className='country-header country-description'>Name: {name}</h1>
