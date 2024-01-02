@@ -28,18 +28,9 @@ class Countries extends Component {
     }
 
     getCountryProps(country) {
-        const name = country?.name?.common;
-        const capitalCity = country?.capital?.[0];
-        const img = country?.flags?.png;
-        const population = country?.popluation;
-
         return {
             key: country.cca3,
-            capitalCity,
-            country,
-            name,
-            population,
-            img
+            country  
         }
     }
 }
